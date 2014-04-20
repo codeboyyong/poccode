@@ -29,7 +29,7 @@ import java.sql.Statement;
  * @author zhaoyong
  * 
  */
-public class VerticaTeradataTest {
+public class VerticaTest {
 	static String hostName = "10.0.0.123"; // change it to your vertica vm's ip
 											// address
 
