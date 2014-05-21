@@ -1,2 +1,5 @@
 /Debug
 /.DS_Store
+/build
+/target
+/.settings
