@@ -14,7 +14,7 @@ import com.codeboy.oj.common.TreeNode;
  * @author zhaoyong
  * 
  */
-public class A2_Maximum_Depth_of_Binary_Tree {
+public class C2_Maximum_Depth_of_Binary_Tree {
 
     public int maxDepth(TreeNode root) {
     	if(root==null){

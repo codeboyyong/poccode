@@ -11,7 +11,7 @@ import com.codeboy.oj.common.TreeNode;
  * @author zhaoyong
  * 
  */
-public class A3_Same_Tree {
+public class C1_Same_Tree {
 	public boolean isSameTree(TreeNode p, TreeNode q) {
 		//check the null is very important 
 		if (p == null && q == null) {
