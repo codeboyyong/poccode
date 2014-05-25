@@ -33,10 +33,21 @@ public class B2_Linked_List_Cycle_II {
 			}
 		}
 
-		if(meetNode==null){
-			return null;
-		} 
-		return null;
+		  //no cycle
+        if(fast == null || fast.next  == null){
+            return null;
+        }
+        
+        //exist cycle
+        //the distance is equal from the intersection and head to 
+        //cycle begins.
+        slow = head;
+        while(slow != fast){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        
+        return slow;
 	}
 
 }
