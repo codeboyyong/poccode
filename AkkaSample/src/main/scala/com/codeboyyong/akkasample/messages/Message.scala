@@ -15,16 +15,11 @@
  * limitations under the License.
  */
 
-package com.alpine.rconnector.messages
+package com.codeboyyong.akkasample.messages
 
 import akka.actor.ActorRef
 
-/* Messages for communication between Alpine's backend and the R server.
- * <p>
- * <b>Note:</b> even though the messages are serializable using the Java serialization API,
- * Akka uses Protobuf by default, and that is preferred. The Serializable market trait
- * was only included to make the configuration more flexible.
- */
+ 
 sealed trait Message extends Serializable
 
 /**
