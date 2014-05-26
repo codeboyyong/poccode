@@ -18,46 +18,12 @@
 package com.codeboyyong.akkasample.messages
 
 import akka.actor.ActorRef
-
  
 sealed trait Message extends Serializable
 
-/**
- * Request from Scala/Java to R
- * @param msg message - R code to execute
- */
-case class RRequest(msg: String) extends Message
-
-/**
- * Response from R to Scala/Java
- * @param msg message - results coming back from R to Scala/Java
- */
-case class RResponse(msg: String) extends Message
-
-/**
- *
- * R exception message
- */
-case class RException(message: String) extends Message
-
-/**
- * Request that the Akka server start the R runtimes.
- * The Akka server itself will keep on running.
- */
-case object RStart extends Message
-
-/**
- * Acknowledge R worker start
- */
-case object StartAck extends Message
-
-/**
- * Request that the Akka server shut down the R runtimes.
- * The Akka server itself will keep on running.
- */
-case object RStop extends Message
-
-/**
- * Acknowledge R worker stop
- */
-case object StopAck extends Message
+case class MyStringRequest(msg: String) extends Message
+ 
+case class MyStringResponse(msg: String) extends Message
+ 
+case class MyException(message: String) extends Message
+ 

@@ -1,10 +1,11 @@
 package com.codeboyyong.akkasample.server
 
  import akka.actor.{Props, ActorSystem}
+import com.codeboyyong.akkasample.actor.MyRemoteActor
  
 
 
-object ServerMain extends App {
+object ServerMainConfigString extends App {
   import akka.actor.ActorSystem
   import com.typesafe.config.ConfigFactory
   val customConf = ConfigFactory.parseString("""

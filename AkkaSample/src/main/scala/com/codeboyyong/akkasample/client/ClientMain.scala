@@ -19,6 +19,8 @@ object ClientMain extends App {
    //remember , "user" in the path is hardcoded.                                                                                        """)))
   val remoteServer = clientSystem.actorSelection(serverUrl + "/user/myRemoteActor")
 
+  //client even dont need an actor. if this what's is the send in the remote actor?
+  // it is a dead letter -> MyRemoteActor:get a string :HEY sender=Actor[akka://myRemoteActorSystem/deadLetters]
   remoteServer ! "HEY"
   remoteServer ! 123
 }

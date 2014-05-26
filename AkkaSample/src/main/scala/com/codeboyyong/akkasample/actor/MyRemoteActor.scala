@@ -1,10 +1,6 @@
-package com.codeboyyong.akkasample.server
+package com.codeboyyong.akkasample.actor
 
-import akka.actor._
-
-import scala.util.Failure
-import scala.Some
-import scala.util.Success
+import akka.actor.Actor
 
 
 class MyRemoteActor( )
@@ -12,7 +8,7 @@ class MyRemoteActor( )
 
 
   def receive: Actor.Receive = {
-    case str:String  => println("MyRemoteActor:get a string :" +str)
+    case str:String  => println("MyRemoteActor:get a string :" +str +" sender=" + sender)
     case intValue:Integer  => println("MyRemoteActor:get a int :" +intValue)
     case obj:Object => println("MyRemoteActor:get a message :" +obj.toString)
 
