@@ -1,26 +1,8 @@
 import AssemblyKeys._
 import sbtassembly.Plugin.MergeStrategy
 
-Seq(assemblySettings: _*)
 
-mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
-  {
-    case PathList("META-INF", xs @ _*) =>
-	    (xs map {_.toLowerCase}) match {
-	      case ("manifest.mf" :: Nil) | ("index.list" :: Nil) | ("dependencies" :: Nil) => MergeStrategy.discard
-	      case _ => MergeStrategy.discard
-	  }
-    case _ => MergeStrategy.first 
-  }
-}
-
-jarName in assembly := "spray-akka-r-server-job-assembly.jar"
-
-test in assembly := {}
-
-
-
-name := "akkarserver"
+name := "myakkasample"
 
 version := "1.0"
 
@@ -59,7 +41,7 @@ resolvers ++= Seq("Typesafe Repository" at "http://repo.typesafe.com/typesafe/re
     )
   }
 
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 

@@ -14,7 +14,7 @@ object ClientMain extends App {
      remote {
       transport = "akka.remote.netty.tcp"
       }
-  }
+  }""")));
 
    //remember , "user" in the path is hardcoded.                                                                                        """)))
   val remoteServer = clientSystem.actorSelection(serverUrl + "/user/myRemoteActor")
