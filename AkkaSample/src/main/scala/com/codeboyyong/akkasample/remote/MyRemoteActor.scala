@@ -1,4 +1,4 @@
-package com.codeboyyong.akkasample.actor
+package com.codeboyyong.akkasample.remote
 
 import akka.actor.Actor
 

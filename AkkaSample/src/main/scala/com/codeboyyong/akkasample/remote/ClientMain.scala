@@ -1,7 +1,8 @@
-package com.codeboyyong.akkasample.client
+package com.codeboyyong.akkasample.remote
 
 import com.typesafe.config.ConfigFactory
-import akka.actor.{Props, ActorSystem}
+import akka.actor.ActorSystem
+import akka.actor.ActorSelection.toScala
  
 object ClientMain extends App {
   val serverUrl = "akka.tcp://myRemoteActorSystem@127.0.0.1:2553"

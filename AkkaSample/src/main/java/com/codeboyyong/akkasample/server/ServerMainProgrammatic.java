@@ -9,7 +9,7 @@ import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.japi.Creator;
 
-import com.codeboyyong.akkasample.actor.MyRemoteActor;
+import com.codeboyyong.akkasample.remote.MyRemoteActor;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 

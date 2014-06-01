@@ -13,7 +13,7 @@ import akka.actor.Props;
 import akka.japi.Creator;
 import akka.remote.RemoteScope;
 
-import com.codeboyyong.akkasample.actor.MyRemoteActor;
+import com.codeboyyong.akkasample.remote.MyRemoteActor;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 

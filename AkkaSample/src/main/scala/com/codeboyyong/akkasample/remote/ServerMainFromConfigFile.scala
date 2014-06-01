@@ -1,7 +1,9 @@
-package com.codeboyyong.akkasample.server
+package com.codeboyyong.akkasample.remote
 
- import akka.actor.{Props, ActorSystem}
-import com.codeboyyong.akkasample.actor.MyRemoteActor
+
+import akka.actor.ActorSystem
+import akka.actor.Props
+import akka.actor.actorRef2Scala
  
 
 

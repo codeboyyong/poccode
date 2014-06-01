@@ -15,9 +15,7 @@
  * limitations under the License.
  */
 
-package com.codeboyyong.akkasample.messages
-
-import akka.actor.ActorRef
+package com.codeboyyong.akkasample.remote
  
 sealed trait Message extends Serializable
 
