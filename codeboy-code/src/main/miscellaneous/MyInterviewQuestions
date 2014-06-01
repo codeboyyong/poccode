@@ -1,0 +1,175 @@
+Some time I have to interview some developers .So I prepare some questions here:
+
+-----------------------------------------------------------------------------------------
+1 Algorithm & Data Structure
+-----------------------------------------------------------------------------------------
+1.1 Sorting
+1.2 BST
+1.3 Stack & Queue  
+1.4 Hashing
+1.5 shortest path
+1.6 max sum squence in a int array
+1.7 reverse a linklist
+1.8
+1.9
+
+
+-----------------------------------------------------------------------------------------
+2 Computer Science Basic
+-----------------------------------------------------------------------------------------
+2.1 What's different between thread and process
+2.3 What’s OO 
+2.4  
+2.5 Have you do C coding? What’s “Segmant Fault” Error.
+2.6 CI?
+2.7 Agile
+2.8 Unittest
+2.9
+
+-----------------------------------------------------------------------------------------
+3 Java basic
+-----------------------------------------------------------------------------------------
+3.1  Can you explain the difference between JRE&JDK
+
+3.2  How many JVM’s do you know? What’s the most frequency used? Why it is called hot spot ?
+    --Sun hot spot,Oracle/BEA JRockit, IBM J9, OpenJDK(coming form oracle/sun)
+
+3.3 Do you know AOP. What kinds of tool will be used?
+
+3.4 Do you know REST? 
+
+3.5 Synchornize of method and sychomnize of object
+
+3.6 Exception
+    Have even see the following exception and how to avoid them? Out of memory he,java heap space, GC over head, out of memory Perm Gen space
+    Do you know Java memory mode? ->Heap,Stack,Perm Gen
+
+3.7 How to avoid the Java Gabyge collection GC overhead Exception
+
+3.8 Java concurnecy 
+
+3.9 Java performance tunning, like xms xmx
+
+3.10 Java reflection API
+
+-----------------------------------------------------------------------------------------
+4 Programming skill
+-----------------------------------------------------------------------------------------
+4.1 naming
+
+4.2 exception handling
+2) queue
+3) thread
+4) IO
+5) JDBC data base
+6)Do you know refectory ?
+7) 
+8)Do you know Agile? Give some example about how do you in an agile team
+any sense of the size of a class a method
+9) How to debug
+
+-----------------------------------------------------------------------------------------
+5 Technical problem
+
+LRU cache
+parallel array merge
+java threadpool
+how to implement a thread poll in java ?
+
+memory leak thread leak  db conenction leak file handler lreak socket connection leak
+ 
+     
+-----------------------------------------------------------------------------------------
+6 Software Architecture and design 
+----------------------------------------------------------------------------------------- 
+UML
+OO
+
+-----------------------------------------------------------------------------------------
+7 Web  
+-----------------------------------------------------------------------------------------
+7.1
+
+ 
+what's the different between  static library and dynamic library
+
+What kinds of java script library did you use?
+
+java script memory leak
+
+shadow dom
+
+xss security issue isthat same as js injection, can you provide a example and how to fix it
+
+Q:What is prototype property in JS. How to achive object-orated capability in java script
+A:The prototype property allows you to add properties and methods to an object.
+
+
+HTTP status 200 201 404 400 
+-----------------------------------------------------------------------------------------
+8 Hadoop related 
+-----------------------------------------------------------------------------------------
+8.1 How many hadoop distribution do you know ? What's the difference 
+
+8.2 Combiner and in-mapper combiner
+
+8.3 implement a map reduce join
+
+8.4 special inputformat 
+
+8.5 Pig UDF
+
+8.6 Hive UDF
+
+8.7 implemnet a parallel data transportation between hdfs and database
+
+8.8 
+
+8.9 
+
+
+----------------------------------------------------------------------------------------- 
+9 Miscellaneous: data base, net work ,security...
+----------------------------------------------------------------------------------------- 
+9.1 SQL inner join and out join,  left join and right join
+
+9.2 how to get the database and all tables columes informaction from JDBC API
+
+9.3
+
+9.4
+
+9.5 is Java script DOM API same as XML dom?
+
+
+9.6
+
+9.7
+
+9.8
+
+9.9
+
+
+----------------------------------------------------------------------------------------- 
+10 General question
+----------------------------------------------------------------------------------------- 
+10.1 Can you recommend me some technical book ? Why do you like them? 
+
+10.2 What’s is the most challenge technical problem you ever faced? how can you solve it ?
+
+10.3 Can you list some favorite technical web site  or blog?               
+
+10.4 What’s your favorite IDE, can you list 10 hot keys you frequently use ?
+
+10.5 What’s your view of an ideally best programmer?
+
+10.6 If you are interviewing me, what question are you gonna ask me ?
+
+10.7
+
+10.8
+
+10.9
+
+-------------------------------------------------------------------------------------------------------------------------
