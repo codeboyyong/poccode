@@ -16,7 +16,7 @@ class SumActor extends  Actor {
       for (i <- start until end) {
         result = result + i
       }
-
+      Thread.sleep(5000)
       println("result:" + result)
       sender ! SUMResult(result, taskId)
     }
