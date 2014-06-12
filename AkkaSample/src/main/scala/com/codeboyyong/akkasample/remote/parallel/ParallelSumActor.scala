@@ -20,8 +20,8 @@ class ParallelSumActor() extends Actor {
     case CalculteSUM(start: Int, end: Int, nTasks: Int) => {
       numOfTasks = nTasks
       startTime = System.currentTimeMillis()
-      if (numOfTasks > 8) {
-        throw new Exception("task number can not bigger than 8")
+      if (numOfTasks > 30) {
+        throw new Exception("task number can not bigger than 30")
       }
       val step = (end - start) / numOfTasks
 

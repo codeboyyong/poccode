@@ -15,8 +15,17 @@ class SumActor extends  Actor {
       var result: Double = 0;
       for (i <- start until end) {
         result = result + i
+         for (j <- 1 until 1000) {
+       //wast tile
+           val x = (j*2+3)/6
+            for (k <- 1 until 1000) {
+       //wast tile
+           val y =( (k+j)*2+3)/6
+           
+         }
+         }
       }
-      Thread.sleep(5000)
+       
       println("result:" + result)
       sender ! SUMResult(result, taskId)
     }
