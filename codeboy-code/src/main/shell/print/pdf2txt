@@ -1,0 +1,37 @@
+ubuntu linux下批量转换pdf转txt的脚本习作
+
+#!/bin/bash
+#与朋友们共享！如果大家有好的修改意见，欢迎给我留言。ubuntu.org.cn centerpoint 感谢irc#ubuntu-cn iGoogle等大牛的帮助。欢迎留言指正。
+#功能：本程序可以把pdf文件批量转换成txt文本。
+#用法：maxdepth 跟的数是目录深度，1为本目录。把本文件保存为pdf2txt.sh,把权限设为“可执行”，然后复制到要转换的pdf文件目录。在命令行下cd到那个目录。
+#执行 ./pdf2txt.sh 即可。
+#作者：ubuntu.org.cn centerpoint 2010.1.6
+
+#扫描的文件类型。
+find ./ -maxdepth 1 -name '*.pdf'>files.mybak
+myi=0
+while read line
+do
+filename="${line##*/}";
+myi=`echo "$myi+1"|bc`
+echo "************************$myi***************************"
+ls -sh "${filename}"
+pdftotext "${filename}"
+ls -sh "${filename%%.pdf}.txt"
+done < files.mybak
+rm files.mybak
+
+
+
+
+
+
+
+
+
+-----------------	
+原来是 因为pdftotext不支持通配符 :em04
+可以这样
+find ./ -name '*.pdf' -print0 | xargs -n 1 -0 pdftotext
+-pint0 和 xargs -n 1 -0 后面结尾都是零
+

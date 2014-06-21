@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>WeightOfEvidence</title>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif">
+<h1>WeightOfEvidence</h1>
+<p><img src="woe.png"></p>
+<h3>Description:</h3>
+<p>The WeightOfEvidence Operator provides an approach to combine information from multiple sources for decision-making. This Operator provides automatic grouping based on statistics. The user also can manually adjust grouping according to work experience. This Operator is frequently followed by a Logistic Regression Operator. </p>
+<h3>Algorithm:</h3>
+<p>WOE(Weight Of Evidence) is based on the statistical Weight of Evidence. WOE is a measure of how much an attribute in the data is related to statuses. Suppose there are two statuses and we want to decide which is more consistent with the given data. First, supply a suggested grouping according to the relationship between an attribute and statuses and the statistic, such as Gini Score, Information Values, and WOE. Specific statistics expression as follows:</p>
+<ul>
+<li><b>WOE:</b><P><img src="WOEF.GIF"></P> <b><i>G<sub>i</sub></i></b> denotes the record number of <b>Good</b> value in <i>ith</i> group. <b><i>G</i></b> denotes the record number of <b>Good</b> value in data. <b><i>B<sub>i</sub></i></b> denotes the record number of <b>Bad</b> value in <i>ith</i> group. <b><i>B</i></b> denotes the record number of <b>Bad</b> value in data.</li>
+<li><b>Information Values(IV):</b><p><img src="IV.GIF"></p></li>
+<li><b>Gini Score:</b><p><img src="Gini.GIF"></p> <b><i>N<sub>i</sub></i></b> denotes the record number in <i>ith</i> group. <b><i>N</i></b> denotes the record number in data.</li>
+</ul>
+<p>
+Also, Alpine Miner provides the interactive modification grouping interface. Users can adjust the suggested grouping based on their experience. Alpine Miner will recompute the statistics according to the adjustment.
+</p>
+<h3>Properties:</h3>
+<table style="margin-left:2.5em;">
+	<tr>
+		<td nowrap style="vertical-align:top"><strong>Dependent Column:</strong></td>
+		<td>Define the column used as binary classification variables.</td>
+	</tr>
+	<tr>
+		<td nowrap style="vertical-align:top"><strong>goodValue:</strong></td>
+		<td>The value stored in dependent column represents the event to be analyzed. For example, Active versus Inactive</td>
+	</tr>
+	<tr>
+		<td nowrap style="vertical-align:top"><strong>Setting WOE: </strong></td>
+		<td>Click the "Setting WOE" button to open the dialog for viewing the statistics based on the suggested grouping and manually adjusting the grouping.
+		     <p><img src="SettingWOE.GIF"></p>
+			 <p>The top left of the dialog shows the available columns list. The top right of the dialog shows the statistics based on grouping (Gini Score, Information Values). On the bottom of dialog, the user can modify the grouping through clicking the "Add" button or "Delete" button. When the user clicks the "Calculate" button after adjustment, the statistics on top right will be recomputed. When the user clicks the "Auto" button, the suggested grouping of the selected attribute is provided.</p>
+			 <p>Press the "Auto Grouping" button to provide the suggested grouping of all attributes.</p>
+			 <p>Press the "OK" button to commit the selection changes.</p>
+			 <p>Press the "Cancel" button to cancel all the selection changes.</p>
+		</td>
+	</tr>
+	<tr>
+		<td nowrap style="vertical-align:top"><strong>columnNames:</strong></td>
+		<td>Click the "Column names" button to open the dialog for selecting the available columns from the input dataset for analysis.
+			<p><img src="ColumnsName.GIF"></p>
+			<p>Check / uncheck the box in front of the column names to select / de-select the column.</p>
+			<p>Check the "Select All" box to select all the columns.</p>
+			<p>Press the "OK" button to commit the selection changes.</p>
+			<p>Press the "Cancel" button to cancel all the selection changes.</p>
+		</td>
+	</tr>
+</table>
+<h3>Input:</h3>
+<ul>
+<li>A dataset from the preceding operator.</li>
+</ul>
+<h3>Output:</h3>
+<ul>
+<li><b>Visual Output: </b>WOE Grouping Result.</li>
+<li><b>Output to succeeding operator: </b>WOE Grouping Rules.</li>
+</ul>
+</body>
+</html>
